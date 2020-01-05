@@ -1,0 +1,29 @@
+{
+  "connection": "default",
+  "collectionName": "artists",
+  "info": {
+    "name": "artist",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "date_of_birth": {
+      "type": "date"
+    },
+    "songs": {
+      "collection": "song",
+      "via": "artist"
+    }
+  }
+}

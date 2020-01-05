@@ -1,0 +1,33 @@
+{
+  "connection": "default",
+  "collectionName": "reviews",
+  "info": {
+    "name": "review",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "Title": {
+      "required": true,
+      "type": "string"
+    },
+    "song": {
+      "model": "song",
+      "via": "review"
+    },
+    "text": {
+      "required": true,
+      "type": "text"
+    },
+    "rating": {
+      "type": "integer",
+      "required": true,
+      "min": 1,
+      "max": 10
+    }
+  }
+}
