@@ -28,13 +28,13 @@
     "cover_url": {
       "type": "string"
     },
-    "review": {
-      "model": "review",
-      "via": "song"
-    },
     "artist": {
       "model": "artist",
       "via": "songs"
+    },
+    "review": {
+      "model": "review",
+      "via": "song"
     }
   }
 }
